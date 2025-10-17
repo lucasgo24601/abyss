@@ -13,7 +13,7 @@ window._CCSettings = {
     remoteBundles: [],
     subpackages: [],
     launchScene: "db://assets/SM_SlotRoom.fire",
-    orientation: "landscape",
+    orientation: "portrait",
     debug: true,
     jsList: [
         "assets/VMCore/Plugins/Greensock/uncompressed/TweenMax.js",
