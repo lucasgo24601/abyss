@@ -1,0 +1,96 @@
+{
+    "reelSetLayout": [
+        {
+            "key": "Default",
+            "reelSet": [
+                {
+                    "reelArrangement": {
+                        "row": 1,
+                        "numberOfReels": 5
+                    },
+                    "numberOfSymbolsPerReel": 3,
+                    "numberOfExtraSymbolsPerReel": 2,
+                    "numberOfTailSymbolsPerReel": 1,
+                    "defaultReelSet": [
+                        [201, 103, 102],
+                        [101, 203, 101],
+                        [101, 204, 104],
+                        [103, 202, 101],
+                        [101, 201, 102]
+                    ],
+                    "layoutAttributes": {
+                        "reelScale": 1,
+                        "reelSize": {
+                            "width": 150,
+                            "height": 392
+                        },
+                        "reelAnchor": {
+                            "x": 0.5,
+                            "y": 0.5
+                        },
+                        "reelPositionOffset": {
+                            "x": 0,
+                            "y": 42,
+                            "initialYSymbolOffset": 0
+                        },
+                        "symbolSize": {
+                            "width": 130,
+                            "height": 128
+                        },
+                        "reelSpacing": {
+                            "x": 2,
+                            "y": 0
+                        },
+                        "symbolSpacingY": 2
+                    }
+                }
+            ]
+        },
+        {
+            "key": "Vertical",
+            "reelSet": [
+                {
+                    "reelArrangement": {
+                        "row": 1,
+                        "numberOfReels": 5
+                    },
+                    "numberOfSymbolsPerReel": 3,
+                    "numberOfExtraSymbolsPerReel": 2,
+                    "numberOfTailSymbolsPerReel": 1,
+                    "defaultReelSet": [
+                        [201, 103, 102],
+                        [101, 203, 101],
+                        [101, 204, 104],
+                        [103, 202, 101],
+                        [101, 201, 102]
+                    ],
+                    "layoutAttributes": {
+                        "reelScale": 1,
+                        "reelSize": {
+                            "width": 110,
+                            "height": 294
+                        },
+                        "reelAnchor": {
+                            "x": 0.5,
+                            "y": 0.5
+                        },
+                        "reelPositionOffset": {
+                            "x": 0,
+                            "y": 42,
+                            "initialYSymbolOffset": 0
+                        },
+                        "symbolSize": {
+                            "width": 86,
+                            "height": 96
+                        },
+                        "reelSpacing": {
+                            "x": 2,
+                            "y": 0
+                        },
+                        "symbolSpacingY": 2
+                    }
+                }
+            ]
+        }
+    ]
+}

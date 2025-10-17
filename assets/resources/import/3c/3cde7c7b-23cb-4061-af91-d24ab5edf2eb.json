@@ -1,0 +1,745 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "reelRandomizerAttributes",
+      {
+        "DefaultPercentageProfile_Normal": [
+          {
+            "SymbolId": "1",
+            "Interval": 0,
+            "Reels": [
+              0,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "5",
+            "Interval": 3,
+            "Reels": [
+              0,
+              2,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "2",
+            "Interval": 3,
+            "Reels": [
+              0,
+              2,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "201",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "202",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "203",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "204",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "101",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "102",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "103",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "104",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "DefaultPercentageProfile_Free": [
+          {
+            "SymbolId": "1",
+            "Interval": 0,
+            "Reels": [
+              0,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "201",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "202",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "203",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "204",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "101",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "102",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "103",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "104",
+            "Interval": 0,
+            "Reels": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "Percentage": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "BigSymbolProfile_Free": [
+          {
+            "SymbolId": "201",
+            "Reels": [
+              1,
+              2,
+              3
+            ],
+            "Percentage": [
+              1,
+              0,
+              0
+            ],
+            "Format": [
+              3,
+              3
+            ]
+          },
+          {
+            "SymbolId": "202",
+            "Reels": [
+              1,
+              2,
+              3
+            ],
+            "Percentage": [
+              1,
+              0,
+              0
+            ],
+            "Format": [
+              3,
+              3
+            ]
+          },
+          {
+            "SymbolId": "203",
+            "Reels": [
+              1,
+              2,
+              3
+            ],
+            "Percentage": [
+              1,
+              0,
+              0
+            ],
+            "Format": [
+              3,
+              3
+            ]
+          },
+          {
+            "SymbolId": "204",
+            "Reels": [
+              1,
+              2,
+              3
+            ],
+            "Percentage": [
+              1,
+              0,
+              0
+            ],
+            "Format": [
+              3,
+              3
+            ]
+          },
+          {
+            "SymbolId": "101",
+            "Reels": [
+              1,
+              2,
+              3
+            ],
+            "Percentage": [
+              1,
+              0,
+              0
+            ],
+            "Format": [
+              3,
+              3
+            ]
+          },
+          {
+            "SymbolId": "102",
+            "Reels": [
+              1,
+              2,
+              3
+            ],
+            "Percentage": [
+              1,
+              0,
+              0
+            ],
+            "Format": [
+              3,
+              3
+            ]
+          },
+          {
+            "SymbolId": "103",
+            "Reels": [
+              1,
+              2,
+              3
+            ],
+            "Percentage": [
+              1,
+              0,
+              0
+            ],
+            "Format": [
+              3,
+              3
+            ]
+          },
+          {
+            "SymbolId": "104",
+            "Reels": [
+              1,
+              2,
+              3
+            ],
+            "Percentage": [
+              1,
+              0,
+              0
+            ],
+            "Format": [
+              3,
+              3
+            ]
+          },
+          {
+            "SymbolId": "1",
+            "Reels": [
+              1,
+              2,
+              3
+            ],
+            "Percentage": [
+              1,
+              0,
+              0
+            ],
+            "Format": [
+              3,
+              3
+            ]
+          }
+        ],
+        "StackProfile_Normal": [
+          {
+            "SymbolId": "stack",
+            "Combination": 3,
+            "Interval": 3,
+            "RandomizerInterval": 3,
+            "Reels": [
+              1,
+              2,
+              3
+            ],
+            "Percentage": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "SymbolId": "stack2",
+            "Combination": 3,
+            "Interval": 3,
+            "RandomizerInterval": 3,
+            "Reels": [
+              1,
+              2,
+              3
+            ],
+            "Percentage": [
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "DefaultPercentagePriority_Normal": {
+          "MaxPriority": 2,
+          "BasePriority": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "StoppingPriority": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "IncrementPriority": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "DefaultPercentagePriority_Free": {
+          "MaxPriority": 2,
+          "BasePriority": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "StoppingPriority": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "IncrementPriority": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "BigSymbolPriority_Normal": {
+          "MaxPriority": 5,
+          "BasePriority": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "StoppingPriority": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "IncrementPriority": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "BigSymbolPriority_Free": {
+          "MaxPriority": 5,
+          "BasePriority": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "StoppingPriority": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "IncrementPriority": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "StackPriority_Normal": {
+          "MaxPriority": 5,
+          "BasePriority": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "StoppingPriority": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "IncrementPriority": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "StackPriority_Free": {
+          "MaxPriority": 5,
+          "BasePriority": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "StoppingPriority": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "IncrementPriority": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "DefaultPercentageConfig_Normal": {
+          "FallBackSymbolList": [
+            "101",
+            "102",
+            "103",
+            "104"
+          ]
+        },
+        "BigSymbolConfig_Normal": {
+          "FallBackSymbolList": [
+            "101",
+            "102",
+            "103",
+            "104"
+          ]
+        },
+        "StackConfig_Normal": {
+          "FallBackSymbolList": [
+            "101",
+            "102",
+            "103",
+            "104"
+          ]
+        }
+      }
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

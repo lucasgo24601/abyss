@@ -1,0 +1,252 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "deferredConfiguration",
+      {
+        "deferred": [
+          {
+            "category": "result-presenter",
+            "prefabs": [
+              {
+                "name": "presenter-bigwin",
+                "importPath": "deferred-prefabs/result-presenters/presenter-bigwin",
+                "parentPath": "SlotMachineCore/SlotMachineBigTextStage",
+                "siblingIndex": -1,
+                "presenterIndex": 0
+              },
+              {
+                "name": "presenter-freegame-enter",
+                "importPath": "deferred-prefabs/result-presenters/presenter-freegame-enter",
+                "parentPath": "SlotMachineCore/SlotMachineBigTextStage",
+                "siblingIndex": -1,
+                "presenterIndex": 1
+              },
+              {
+                "name": "presenter-freegame-exit",
+                "importPath": "deferred-prefabs/result-presenters/presenter-freegame-exit",
+                "parentPath": "SlotMachineCore/SlotMachineBigTextStage",
+                "siblingIndex": -1,
+                "presenterIndex": 2
+              },
+              {
+                "name": "presenter-betterluck",
+                "importPath": "deferred-prefabs/result-presenters/presenter-betterluck",
+                "parentPath": "SlotMachineCore/SlotMachineBigTextStage",
+                "siblingIndex": -1,
+                "presenterIndex": 3
+              },
+              {
+                "name": "presenter-retrigger",
+                "importPath": "deferred-prefabs/result-presenters/presenter-retrigger",
+                "parentPath": "SlotMachineCore/SlotMachineBigTextStage",
+                "siblingIndex": -1,
+                "presenterIndex": 4
+              }
+            ]
+          },
+          {
+            "category": "reel-presenter",
+            "prefabs": [
+              {
+                "name": "presenter-climax",
+                "importPath": "deferred-prefabs/reel-presenters/presenter-climax",
+                "parentPath": "SlotMachineCore/SlotMachineGameStage/GameContainer_Reel",
+                "siblingIndex": -1,
+                "presenterIndex": 0
+              }
+            ]
+          },
+          {
+            "category": "symbol",
+            "assets": [
+              {
+                "symbolID": "2",
+                "blurred": "sprites/symbol/blurred/scatter",
+                "animations": [
+                  {
+                    "importPath": "Animation/Symbols/Scatter/Scatter",
+                    "startingAnim": "",
+                    "containers": [
+                      "container-symbol/animation"
+                    ]
+                  }
+                ]
+              },
+              {
+                "symbolID": "201",
+                "blurred": "sprites/symbol/blurred/H1",
+                "animations": [
+                  {
+                    "importPath": "Animation/Symbols/High1/High1",
+                    "startingAnim": "",
+                    "containers": [
+                      "container-symbol/animation"
+                    ]
+                  }
+                ]
+              },
+              {
+                "symbolID": "202",
+                "blurred": "sprites/symbol/blurred/H2",
+                "animations": [
+                  {
+                    "importPath": "Animation/Symbols/High2/High2",
+                    "startingAnim": "",
+                    "containers": [
+                      "container-symbol/animation"
+                    ]
+                  }
+                ]
+              },
+              {
+                "symbolID": "203",
+                "blurred": "sprites/symbol/blurred/H3",
+                "animations": [
+                  {
+                    "importPath": "Animation/Symbols/High3/High3",
+                    "startingAnim": "",
+                    "containers": [
+                      "container-symbol/animation"
+                    ]
+                  }
+                ]
+              },
+              {
+                "symbolID": "204",
+                "blurred": "sprites/symbol/blurred/H4",
+                "animations": [
+                  {
+                    "importPath": "Animation/Symbols/High4/High4",
+                    "startingAnim": "",
+                    "containers": [
+                      "container-symbol/animation"
+                    ]
+                  }
+                ]
+              },
+              {
+                "symbolID": "101",
+                "blurred": "sprites/symbol/blurred/L1",
+                "animations": [
+                  {
+                    "importPath": "Animation/Symbols/Low1/Low1",
+                    "startingAnim": "",
+                    "containers": [
+                      "container-symbol/animation"
+                    ]
+                  }
+                ]
+              },
+              {
+                "symbolID": "102",
+                "blurred": "sprites/symbol/blurred/L2",
+                "animations": [
+                  {
+                    "importPath": "Animation/Symbols/Low2/Low2",
+                    "startingAnim": "",
+                    "containers": [
+                      "container-symbol/animation"
+                    ]
+                  }
+                ]
+              },
+              {
+                "symbolID": "103",
+                "blurred": "sprites/symbol/blurred/L3",
+                "animations": [
+                  {
+                    "importPath": "Animation/Symbols/Low3/Low3",
+                    "startingAnim": "",
+                    "containers": [
+                      "container-symbol/animation"
+                    ]
+                  }
+                ]
+              },
+              {
+                "symbolID": "104",
+                "blurred": "sprites/symbol/blurred/L4",
+                "animations": [
+                  {
+                    "importPath": "Animation/Symbols/Low4/Low4",
+                    "startingAnim": "",
+                    "containers": [
+                      "container-symbol/animation"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "ui-popup",
+            "prefabs": [
+              {
+                "name": "popup-paytable",
+                "importPath": "deferred-prefabs/popups/popup-paytable",
+                "parentPath": "SlotMachineCore/SlotMachineUIStage/UIContainer_Popup",
+                "siblingIndex": 0
+              },
+              {
+                "name": "GameContainer_BuyFreeSpin",
+                "importPath": "deferred-prefabs/popups/GameContainer_BuyFreeSpin",
+                "parentPath": "SlotMachineCore/SlotMachineGameStage",
+                "siblingIndex": -1
+              },
+              {
+                "name": "popup-features-buyfreespin",
+                "importPath": "deferred-prefabs/popups/popup-features-buyfreespin",
+                "parentPath": "SlotMachineCore/SlotMachineUIStage",
+                "siblingIndex": 0
+              }
+            ]
+          },
+          {
+            "category": "game-stage",
+            "prefabs": [
+              {
+                "name": "background-normal",
+                "importPath": "deferred-prefabs/game-stage/background-normal",
+                "parentPath": "SlotMachineCore/SlotMachineGameStage/__gameContainerBackground/Normal",
+                "siblingIndex": -1
+              },
+              {
+                "name": "background-freespin",
+                "importPath": "deferred-prefabs/game-stage/background-freespin",
+                "parentPath": "SlotMachineCore/SlotMachineGameStage/__gameContainerBackground/Freespin",
+                "siblingIndex": -1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

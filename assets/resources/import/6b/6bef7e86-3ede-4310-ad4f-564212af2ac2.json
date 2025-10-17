@@ -1,0 +1,47 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "generalConfiguration",
+      {
+        "gameBuildVersion": "1",
+        "buildEnviroment": 2,
+        "slotMaker": "RG",
+        "valueDisplaySettings": [
+          "currency",
+          "coin"
+        ],
+        "supportedWebFont": [
+          "ArialBlack",
+          "ArialBold"
+        ]
+      }
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

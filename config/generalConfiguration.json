@@ -1,0 +1,13 @@
+{
+    "gameBuildVersion": "1",
+    "buildEnviroment": 2,
+    "valueDisplaySettings": [
+        "currency",
+        "coin"
+    ],
+    "supportedWebFont": [
+        "ArialBlack",
+        "ArialBold"
+    ],
+    "slotMaker": "RG"
+}

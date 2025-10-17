@@ -1,0 +1,229 @@
+{
+    "winType": 0,
+    "hasPreStartPresentation": false,
+    "//comment": "available type: wild, scatter, jackpot, multiplier",
+    "symbolData": [
+        {
+            "symbolId": 1,
+            "type": ["wild"]
+        },
+        {
+            "symbolId": 25,
+            "type": ["scatter"]
+        },
+        {
+            "symbolId": 201
+        },
+        {
+            "symbolId": 202
+        },
+        {
+            "symbolId": 203
+        },
+        {
+            "symbolId": 204
+        },
+        {
+            "symbolId": 101
+        },
+        {
+            "symbolId": 102
+        },
+        {
+            "symbolId": 103
+        },
+        {
+            "symbolId": 104
+        }
+    ],
+    "payoutData": {
+        "winLine": [
+            {
+                "symbolId": 201,
+                "payout": [50, 200, 1000],
+                "payoutCount": [3, 4, 5]
+            },
+            {
+                "symbolId": 202,
+                "payout": [20, 80, 400],
+                "payoutCount": [3, 4, 5]
+            },
+            {
+                "symbolId": 203,
+                "payout": [15, 40, 200],
+                "payoutCount": [3, 4, 5]
+            },
+            {
+                "symbolId": 204,
+                "payout": [10, 30, 160],
+                "payoutCount": [3, 4, 5]
+            },
+            {
+                "symbolId": 101,
+                "payout": [7, 20, 100],
+                "payoutCount": [3, 4, 5]
+            },
+            {
+                "symbolId": 102,
+                "payout": [5, 15, 60],
+                "payoutCount": [3, 4, 5]
+            },
+            {
+                "symbolId": 103,
+                "payout": [3, 10, 40],
+                "payoutCount": [3, 4, 5]
+            },
+            {
+                "symbolId": 104,
+                "payout": [2, 5, 20],
+                "payoutCount": [3, 4, 5]
+            }
+        ],
+        "ways": [],
+        "scatter": [
+            {
+                "symbolId": 2,
+                "payout": [2500],
+                "payoutCount": [3]
+            }
+        ]
+    },
+    "isBothWays": true,
+    "winLinePattern": [
+        [1, 1, 1, 1, 1],
+        [0, 0, 0, 0, 0],
+        [2, 2, 2, 2, 2],
+        [0, 1, 2, 1, 0],
+        [2, 1, 0, 1, 2],
+        [0, 0, 1, 0, 0],
+        [2, 2, 1, 2, 2],
+        [1, 2, 2, 2, 1],
+        [1, 0, 0, 0, 1]
+    ],
+    "supportedLocale": [
+        {
+            "localeCode": "en-us",
+            "localeLabel": "English"
+        },
+        {
+            "localeCode": "zh-cn",
+            "localeLabel": "简体中文"
+        },
+        {
+            "localeCode": "th-th",
+            "localeLabel": "ไทย"
+        },
+        {
+            "localeCode": "my-mm",
+            "localeLabel": "ไทย"
+        }
+    ],
+    "loginData": {
+        "resolveWinResult": false
+    },
+    "freeSpinData": {
+        "includeWinWin": false,
+        "bringBaseSpinWinAmount": false,
+        "defaultMultiplier": 0,
+        "defaultFreeSpins": 8,
+        "freeTypeData": [
+            {
+                "freeType": 1,
+                "freeSpins": [7, 10],
+                "multipliers": []
+            },
+            {
+                "freeType": 2,
+                "freeSpins": [7, 15],
+                "multipliers": []
+            },
+            {
+                "freeType": 3,
+                "freeSpins": [10, 15],
+                "multipliers": []
+            },
+            {
+                "freeType": 4,
+                "freeSpins": [7],
+                "multipliers": [5]
+            },
+            {
+                "freeType": 5,
+                "freeSpins": [10],
+                "multipliers": [5]
+            },
+            {
+                "freeType": 6,
+                "freeSpins": [15],
+                "multipliers": [5]
+            },
+            {
+                "freeType": 7,
+                "freeSpins": [7],
+                "multipliers": [8]
+            },
+            {
+                "freeType": 8,
+                "freeSpins": [10],
+                "multipliers": [8]
+            },
+            {
+                "freeType": 9,
+                "freeSpins": [15],
+                "multipliers": [8]
+            },
+            {
+                "freeType": 10,
+                "freeSpins": [],
+                "multipliers": [5, 8]
+            }
+        ]
+    },
+    "respinData": {
+        "accumulateWin": true,
+        "advanceRequestAPI": false,
+        "skipSpin": true
+    },
+    "buyFeatureData": {
+        "hasBuyFreeSpin": true,
+        "operatorBlacklist": [
+            "ambnsbookTHB",
+            "ambnsbookIDR",
+            "ambnsbookMMK",
+            "ambnsbookMYR",
+            "ambnsbookCNY",
+            "ambnsbookVND",
+            "ambnsbookKHR",
+            "ambkingKRW",
+            "ambkingINR",
+            "ambnsbook1USD",
+            "ambnsbookEUR",
+            "ambsuperslotTHB"
+        ],
+        "enableTicket": false,
+        "brandWhitelistOnTicket": [],
+        "operatorBlacklistOnTicket": []
+    },
+    "jackpotData": {
+        "haveJackpot": false,
+        "//comment": "set haveJackpot to false in Live22 by default",
+        "brand": "UUSlots",
+        "//brand_options": ["UUSlots", "Live22"],
+        "refreshInterval": 5,
+        "vibrateDuration": 2
+    },
+    "isLiteMode": false,
+    "waitReelToSendSpin": false,
+    "deviceVibration": {
+        "ios": false,
+        "android": true
+    },
+    "showTempBetSize" : {
+        "normal": false,
+        "freespin": true
+    },
+    "supportedSpinMode": {
+        "fastMode": false,
+        "turboMode": true
+    }
+}

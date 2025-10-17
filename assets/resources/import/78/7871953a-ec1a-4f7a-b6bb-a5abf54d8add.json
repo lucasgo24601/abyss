@@ -1,0 +1,137 @@
+[
+  1,
+  0,
+  0,
+  [
+    [
+      "cc.JsonAsset",
+      [
+        "_name",
+        "json"
+      ],
+      1
+    ]
+  ],
+  [
+    [
+      0,
+      0,
+      1,
+      3
+    ]
+  ],
+  [
+    [
+      0,
+      "dynamicConfiguration",
+      {
+        "reelVariables": {
+          "reelSpinSpeed": {
+            "spinSpeed": 1800,
+            "minSpinSpeed": 250,
+            "maxSpinSpeed": 1800,
+            "fastSpinSpeedMultiplier": 1,
+            "turboSpinSpeedMultiplier": 1.5,
+            "spinTimer": 3,
+            "speedOfDeceleration": 0.984,
+            "finalSpinRatio": 0.3
+          },
+          "reelSpinIntervals": {
+            "startingInterval": 0.1,
+            "startingIntervalFastSpin": 0,
+            "startingIntervalTurboSpin": 0,
+            "stoppingInterval": 0.2,
+            "stoppingIntervalFastSpin": 0,
+            "stoppingIntervalTurboSpin": 0,
+            "symbolInterval": 0.075,
+            "symbolIntervalFastSpin": 0,
+            "symbolIntervalTurboSpin": 0
+          },
+          "reelSpinObjectVariables": {
+            "enableMaskingOnStop": 0,
+            "normalSpinBounce": {
+              "bounceNormalSpinUpDuration": 0.1,
+              "bounceNormalSpinUpDistance": 20,
+              "bounceNormalSpinStopDownDuration": 0.1,
+              "bounceNormalSpinStopUpDuration": 0.1,
+              "bounceNormalSpinDownDistance": 40
+            },
+            "fastSpinBounce": {
+              "bounceFastSpinUpDuration": 0.1,
+              "bounceFastSpinUpDistance": 20,
+              "bounceFastSpinStopDownDuration": 0.1,
+              "bounceFastSpinStopUpDuration": 0.1,
+              "bounceFastSpinDownDistance": 40
+            },
+            "turboSpinBounce": {
+              "bounceTurboSpinUpDuration": 0.05,
+              "bounceTurboSpinUpDistance": 20,
+              "bounceTurboSpinStopDownDuration": 0.05,
+              "bounceTurboSpinStopUpDuration": 0.05,
+              "bounceTurboSpinDownDistance": 40
+            },
+            "skipSpinBounce": {
+              "bounceSkipSpinStopDownDuration": 0.1,
+              "bounceSkipSpinStopUpDuration": 0.05,
+              "bounceSkipSpinDownDistance": 40
+            }
+          }
+        },
+        "featureVariables": {
+          "dropDown": {
+            "reelDropInterval": 0,
+            "symbolDropDuration": 0.15,
+            "symbolFastDropDuration": 0.15,
+            "symbolTurboDropDuration": 0.15,
+            "symbolDropInterval": 0,
+            "dropEasing": "M0,0 C0,0 1,1 1,1",
+            "appearOffsetY": 0,
+            "extraMaskWidth": 100
+          },
+          "showAllWin": {
+            "normalSpin": {
+              "autoSkip": false,
+              "autoSkipDuration": 1
+            },
+            "fastSpin": {
+              "autoSkip": false,
+              "autoSkipDuration": 1
+            },
+            "turboSpin": {
+              "autoSkip": false,
+              "autoSkipDuration": 1
+            }
+          },
+          "reelWinHandlers": {
+            "audio": {
+              "skipInTurboAutoSpin": false,
+              "mustPlayInBigWin": false
+            },
+            "winframe": {
+              "skipInTurboAutoSpin": false,
+              "mustPlayInBigWin": false
+            },
+            "symbol": {
+              "skipInTurboAutoSpin": false,
+              "mustPlayInBigWin": false
+            },
+            "winline": {
+              "skipInTurboAutoSpin": false,
+              "mustPlayInBigWin": true
+            },
+            "amount": {
+              "skipInTurboAutoSpin": false,
+              "mustPlayInBigWin": true
+            }
+          }
+        },
+        "customVariables": {}
+      }
+    ]
+  ],
+  0,
+  0,
+  [],
+  [],
+  []
+]

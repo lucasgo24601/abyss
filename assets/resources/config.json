@@ -1,0 +1,61 @@
+{
+    "paths": {
+        "20TR0SbidPN6C1rZARMaCA": [
+            "config/files/audioDuckerProperty",
+            "cc.JsonAsset"
+        ],
+        "70D5Yzf5ZJnarI6i5I9b/I": [
+            "config/files/deferredConfiguration",
+            "cc.JsonAsset"
+        ],
+        "78cZU67BpPera7pav1TYrd": [
+            "config/files/dynamicConfiguration",
+            "cc.JsonAsset"
+        ],
+        "09gA7yJnJEaJ8KG14YMr0s": [
+            "config/files/gameAttributes",
+            "cc.JsonAsset"
+        ],
+        "6b736GPt5DEK1PVkISryrC": [
+            "config/files/generalConfiguration",
+            "cc.JsonAsset"
+        ],
+        "71Zq7BgXpCn5ZkS5D4jO0c": [
+            "config/files/layoutScreenChangeAttributes",
+            "cc.JsonAsset"
+        ],
+        "a9QkL4jfROAqvTh88LfihI": [
+            "config/files/reelAttributes",
+            "cc.JsonAsset"
+        ],
+        "3c3nx7I8tAYa+R0kq17fLr": [
+            "config/files/reelRandomizerAttributes",
+            "cc.JsonAsset"
+        ],
+        "bdZFYqIvNILJPmOgQ0LHRt": [
+            "config/language/en-us",
+            "cc.JsonAsset"
+        ]
+    },
+    "uuids": [
+        "20TR0SbidPN6C1rZARMaCA",
+        "70D5Yzf5ZJnarI6i5I9b/I",
+        "78cZU67BpPera7pav1TYrd",
+        "09gA7yJnJEaJ8KG14YMr0s",
+        "6b736GPt5DEK1PVkISryrC",
+        "71Zq7BgXpCn5ZkS5D4jO0c",
+        "a9QkL4jfROAqvTh88LfihI",
+        "3c3nx7I8tAYa+R0kq17fLr",
+        "bdZFYqIvNILJPmOgQ0LHRt"
+    ],
+    "scenes": {},
+    "redirect": [],
+    "deps": [],
+    "packs": {},
+    "name": "resources",
+    "importBase": "import",
+    "nativeBase": "native",
+    "debug": true,
+    "isZip": false,
+    "encrypted": false
+}
