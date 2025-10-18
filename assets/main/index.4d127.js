@@ -4,7 +4,7 @@ System.register("chunks:///_virtual/fakeData.ts",["cc"],(function(){var e;return
 
 System.register("chunks:///_virtual/main",["./debug-view-runtime-control.ts","./Start.ts","./fakeData.ts"],(function(){return{setters:[null,null,null],execute:function(){}}}));
 
-System.register("chunks:///_virtual/Start.ts",["./rollupPluginModLoBabelHelpers.js","cc"],(function(n){var t,e,o,r,c;return{setters:[function(n){t=n.inheritsLoose},function(n){e=n.cclegacy,o=n._decorator,r=n.assetManager,c=n.Component}],execute:function(){var u;e._RF.push({},"34e2foHe6pM6Ykw2HL9zUx/","Start",void 0);var a=o.ccclass;o.property,n("Start",a(u=function(n){function e(){return n.apply(this,arguments)||this}return t(e,n),e.prototype.start=function(){r.loadBundle("common",(function(){r.loadBundle("game",(function(){r.loadBundle("launcher",(function(n,t){t.loadScene("launcher",(function(n,t){}))}))}))}))},e}(c))||u);e._RF.pop()}}}));
+System.register("chunks:///_virtual/Start.ts",["./rollupPluginModLoBabelHelpers.js","cc"],(function(n){var t,e,o,r,c,u;return{setters:[function(n){t=n.inheritsLoose},function(n){e=n.cclegacy,o=n._decorator,r=n.assetManager,c=n.director,u=n.Component}],execute:function(){var a;e._RF.push({},"34e2foHe6pM6Ykw2HL9zUx/","Start",void 0);var i=o.ccclass;o.property,n("Start",i(a=function(n){function e(){return n.apply(this,arguments)||this}return t(e,n),e.prototype.start=function(){r.loadBundle("common",(function(){r.loadBundle("game",(function(){r.loadBundle("launcher",(function(n,t){t.loadScene("launcher",(function(n,t){c.runScene(t)}))}))}))}))},e}(u))||a);e._RF.pop()}}}));
 
 (function(r) {
   r('virtual:///prerequisite-imports/main', 'chunks:///_virtual/main'); 
