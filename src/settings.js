@@ -12,7 +12,7 @@ window._CCSettings = {
     hasStartSceneBundle: false,
     remoteBundles: [],
     subpackages: [],
-    launchScene: "db://assets/SM_SlotRoom.fire",
+    launchScene: "db://assets/New Scene.fire",
     orientation: "portrait",
     debug: true,
     jsList: [

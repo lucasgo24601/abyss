@@ -3,7 +3,7 @@ html {
 }
 
 body, canvas, div {
-  display: green;
+  display: block;
   outline: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
@@ -35,7 +35,7 @@ body {
 
   cursor: default;
   color: #888;
-  background-color: #cece2e;
+  background-color: #333;
 
   text-align: center;
   font-family: Helvetica, Verdana, Arial, sans-serif;
@@ -62,7 +62,7 @@ body {
 }
 
 canvas {
-  background-color: rgba(64, 78, 144, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 a:link, a:visited {
@@ -87,7 +87,7 @@ p.footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #49df44 url(./splash.png) no-repeat center;
+  background: #171717 url(./splash.png) no-repeat center;
   background-size: 45%;
 }
 
