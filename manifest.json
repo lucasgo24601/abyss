@@ -1,0 +1,15 @@
+{
+  "short_name": "RG",
+  "name": "RG",
+  "icons": [
+      {
+          "src": "favicon192.png?v=5",
+          "type": "image/png",
+          "sizes": "192x192"
+      }
+  ],
+  "start_url": ".",
+  "display": "Fullscreen",
+  "theme_color": "#000",
+  "background_color": "#000"
+}
