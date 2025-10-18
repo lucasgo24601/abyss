@@ -6,12 +6,11 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>Game</title>
 
-    <!-- 關鍵：viewport-fit=cover 讓內容延伸到安全區域外 -->
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" /> 
 
-    <!-- iOS PWA 全螢幕設置 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
 
     <meta name="renderer" content="webkit" />
@@ -24,50 +23,44 @@
     <meta name="360-fullscreen" content="true" />
     <meta name="x5-page-mode" content="app">
 
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="./manifest.json">
+    <link rel="manifest" href="manifest.json">
 
     <style>
         * {
-          box-sizing: border-box;
-          padding: 0;
           margin: 0;
+          padding: 0;
+          box-sizing: border-box;
         }
 
         html, body {
-          position: fixed;
-          top: 0;
-          left: 0;
           width: 100%;
           height: 100%;
+          position: fixed;
           overflow: hidden;
-          -webkit-overflow-scrolling: touch;
-          overscroll-behavior: none;
+          background-color: #333;
         }
 
         html {
-          /* 使用 100vh 加上安全區域偏移，強制覆蓋整個螢幕 */
-          height: calc(100vh + env(safe-area-inset-top) + env(safe-area-inset-bottom));
-          margin-top: calc(-1 * env(safe-area-inset-top));
+          /* 使用 screen.height 而不是 100vh */
+          top: 0;
+          left: 0;
         }
     
         body {
-          cursor: default;
-          background-color: #333;
-          text-align: center;
           font-family: Helvetica, Verdana, Arial, sans-serif;
-          -ms-touch-action: none;
+          -webkit-user-select: none;
+          user-select: none;
+          -webkit-touch-callout: none;
+          -webkit-tap-highlight-color: transparent;
           touch-action: none;
+          overscroll-behavior: none;
         }
     
-        body, canvas, div {
+        canvas, div {
           display: block;
           outline: none;
-          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          -webkit-tap-highlight-color: transparent;
           user-select: none;
-          -moz-user-select: none;
-          -webkit-user-select: none;
-          -ms-user-select: none;
         }
 
         input::-webkit-outer-spin-button,
@@ -84,15 +77,20 @@
           position: fixed;
           top: 0;
           left: 0;
-          width: 100vw;
-          height: 100vh;
-          /* 強制延伸到安全區域外 */
-          height: calc(100vh + env(safe-area-inset-top) + env(safe-area-inset-bottom));
-          margin-top: calc(-1 * env(safe-area-inset-top));
+          width: 100%;
+          height: 100%;
           overflow: hidden;
+          z-index: 1;
         }
         
-        #Cocos3dGameContainer,
+        #Cocos3dGameContainer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
         #GameCanvas {
           position: absolute;
           top: 0;
@@ -101,27 +99,55 @@
           height: 100%;
         }
     
-        /* Debug 信息 */
         #debug-info {
           position: fixed;
-          bottom: 20px;
+          bottom: 60px;
           left: 50%;
           transform: translateX(-50%);
-          background-color: rgba(255, 0, 255, 0.8);
+          background: rgba(255, 0, 255, 0.9);
           color: white;
-          padding: 10px 20px;
+          padding: 12px 20px;
           border-radius: 20px;
-          font-size: 12px;
-          font-family: monospace;
-          z-index: 99999;
+          font-size: 10px;
+          font-family: 'Courier New', monospace;
+          z-index: 999999;
           pointer-events: none;
-          white-space: pre-line;
-          text-align: center;
+          text-align: left;
+          line-height: 1.5;
+          max-width: 85%;
+        }
+
+        /* 覆蓋頂部狀態欄 */
+        #top-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 60px;
+          background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, transparent 100%);
+          z-index: 999998;
+          pointer-events: none;
+        }
+
+        /* 覆蓋底部 Home Indicator */
+        #bottom-overlay {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 40px;
+          background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+          z-index: 999998;
+          pointer-events: none;
         }
     </style>
 </head>
 
 <body>
+    <!-- 覆蓋層 -->
+    <div id="top-overlay"></div>
+    <div id="bottom-overlay"></div>
+    
     <div id="debug-info"></div>
 
     <div id="GameDiv" cc_exact_fit_screen="true">
@@ -131,47 +157,104 @@
     </div>
 
     <script>
-        // Debug 信息
-        function updateDebugInfo() {
-            const debugInfo = document.getElementById('debug-info');
-            const safeTop = getComputedStyle(document.documentElement).getPropertyValue('--safe-top') || 
-                           getComputedStyle(document.body).getPropertyValue('env(safe-area-inset-top)') || '0px';
-            const safeBottom = getComputedStyle(document.documentElement).getPropertyValue('--safe-bottom') ||
-                              getComputedStyle(document.body).getPropertyValue('env(safe-area-inset-bottom)') || '0px';
+        // 使用實際屏幕尺寸
+        function setActualScreenSize() {
+            const actualHeight = window.screen.height;
+            const actualWidth = window.screen.width;
             
-            debugInfo.innerHTML = `
-                Screen: ${window.innerWidth}x${window.innerHeight}
-                Safe Top: ${safeTop}
-                Safe Bottom: ${safeBottom}
-                isStandalone: ${window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches}
-            `;
+            // 設置 HTML 和 Body 為實際屏幕高度
+            document.documentElement.style.height = actualHeight + 'px';
+            document.body.style.height = actualHeight + 'px';
+            
+            // 設置遊戲容器為實際屏幕高度
+            const gameDiv = document.getElementById('GameDiv');
+            if (gameDiv) {
+                gameDiv.style.height = actualHeight + 'px';
+                gameDiv.style.width = actualWidth + 'px';
+            }
+            
+            updateDebugInfo();
         }
 
-        updateDebugInfo();
-        window.addEventListener('resize', updateDebugInfo);
+        // 更新 Debug 信息
+        function updateDebugInfo() {
+            const debugDiv = document.getElementById('debug-info');
+            
+            const info = {
+                screenW: window.screen.width,
+                screenH: window.screen.height,
+                innerW: window.innerWidth,
+                innerH: window.innerHeight,
+                clientH: document.documentElement.clientHeight,
+                standalone: window.navigator.standalone ? 'YES' : 'NO',
+                ratio: window.devicePixelRatio
+            };
+            
+            debugDiv.innerHTML = `
+Screen: ${info.screenW}x${info.screenH}
+Inner: ${info.innerW}x${info.innerH}
+Client: ${info.clientH}
+Standalone: ${info.standalone}
+Pixel Ratio: ${info.ratio}
+差異: ${info.screenH - info.innerH}px
+            `.trim();
+        }
 
-        // 防止滾動
+        // 初始化
+        setActualScreenSize();
+        
+        // 監聽變化
+        window.addEventListener('resize', setActualScreenSize);
+        window.addEventListener('orientationchange', function() {
+            setTimeout(setActualScreenSize, 100);
+        });
+
+        // 防止滾動和縮放
         document.addEventListener('touchmove', function(e) {
-            if (e.target.tagName !== 'CANVAS') return;
             e.preventDefault();
         }, { passive: false });
 
-        // 防止縮放
         document.addEventListener('gesturestart', function(e) {
             e.preventDefault();
         });
 
-        // 隱藏地址欄（僅在某些瀏覽器有效）
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                window.scrollTo(0, 1);
-            }, 0);
+        document.addEventListener('gesturechange', function(e) {
+            e.preventDefault();
         });
+
+        document.addEventListener('gestureend', function(e) {
+            e.preventDefault();
+        });
+
+        // 嘗試進入全屏
+        function tryFullscreen() {
+            const elem = document.documentElement;
+            const fullscreenMethod = elem.requestFullscreen || 
+                                    elem.webkitRequestFullscreen || 
+                                    elem.webkitEnterFullscreen ||
+                                    elem.mozRequestFullScreen || 
+                                    elem.msRequestFullscreen;
+            
+            if (fullscreenMethod) {
+                fullscreenMethod.call(elem).catch(err => {
+                    console.log('Fullscreen attempt:', err.message);
+                });
+            }
+        }
+
+        // 點擊時嘗試全屏
+        let fullscreenAttempted = false;
+        document.addEventListener('touchend', function() {
+            if (!fullscreenAttempted) {
+                fullscreenAttempted = true;
+                tryFullscreen();
+            }
+        }, { once: true });
 
         // 載入遊戲
         window.onload = function () {
             System.import('./index.86742.js').catch(function (err) { 
-                console.error(err); 
+                console.error('Game load error:', err); 
             });
         };
     </script>
