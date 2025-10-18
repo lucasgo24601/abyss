@@ -28,18 +28,13 @@
         html {
           -ms-touch-action: none;
     
-          /* --- 關鍵修改 --- */
-          /* 為了讓 PWA 模式真正填滿物理螢幕（無視瀏海和底部 Home Bar），
-            我們需要將 html 元素本身 "固定" 在視窗上。
-            這能建立一個 100% 物理螢幕大小的根容器。
-          */
+          /* 保持 html 固定在視窗上，這是 PWA 模式下讓根元素填滿物理螢幕的基礎 */
           position: fixed; 
           top: 0;
           left: 0;
           width: 100%;
-          height: 100%;
+          height: 100%; /* 使用 100% 配合 fixed 和 viewport-fit=cover */
           overflow: hidden; /* 防止根元素滾動 */
-          /* --- 結束 --- */
         }
     
         body, canvas, div {
@@ -58,23 +53,32 @@
         /* Remove spin of input type number */
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
-            /* display: none; <- Crashes Chrome on hover */
             -webkit-appearance: none;
-            margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+            margin: 0;
         }
     
         body {
-          /* 既然 html 已經是 'position: fixed'，
-            body 只需要用 'absolute' 填滿 100% 的 html 即可。
-          */
-          position: absolute;
+          position: absolute; /* 相對於 fixed 的 html 元素 */
           top: 0;
           left: 0;
           width: 100%;
-          height: 100%;
+          
+          /* --- 關鍵修改 --- */
+          /* 使用 100vh 來確保 body 至少有視窗高度，
+             同時利用 calc() 加上 env(safe-area-inset-bottom)
+             來覆蓋可能存在的瀏覽器默認底部安全區域填充，
+             或者確保在某些環境下，body 能夠直接利用底部安全區域。
+             通常 100% 或 100vh 配合 viewport-fit=cover 就夠了，
+             但有時候瀏覽器會頑固地在 body 產生安全區間。
+             這是一個更強制的做法。
+          */
+          min-height: calc(100vh + env(safe-area-inset-bottom));
+          height: 100%; /* 保留 height: 100% 確保在非固定模式下也能正常 */
+          /* --- 結束 --- */
+    
           padding: 0;
           border: 0;
-          margin: 0;
+          margin: 0; /* 確保沒有任何默認邊距 */
     
           cursor: default;
           color: #888;
@@ -86,8 +90,7 @@
           display: flex;
           flex-direction: column;
     
-          /* 再次確保 body 不會滾動 */
-          overflow: hidden; 
+          overflow: hidden; /* 確保 body 不會滾動 */
         }
     
         canvas {
@@ -96,15 +99,11 @@
     
         #GameDiv, #Cocos3dGameContainer, #GameCanvas {
           width: 100%;
-          height: 100%;
+          height: 100%; /* 讓遊戲容器和 canvas 填充整個 body */
         }
     
         :root {
-          /* 這些變數你仍然可以保留，
-            如果你遊戲 *內部* 的 UI 元素 (例如血條、按鈕) 
-            *需要* 避開瀏海或 Home Bar，就可以使用它們。
-            但遊戲背景/畫布本身會填滿全螢幕。
-          */
+          /* 這些變數仍然有用，如果你需要在遊戲內部 UI 上避開安全區 */
           --safe-top: env(safe-area-inset-top);
           --safe-right: env(safe-area-inset-right);
           --safe-bottom: env(safe-area-inset-bottom);
@@ -153,7 +152,7 @@
             .then(() => window.isSupportAvif = true)
             .catch(() => window.isSupportAvif = false);
 
-        alert("c")
+        alert("d")
     </script>
 
     <script>
