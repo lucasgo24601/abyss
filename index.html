@@ -26,10 +26,16 @@
   <meta name="x5-fullscreen" content="true"/>
   <meta name="360-fullscreen" content="true"/>
   
+  <!-- force screen orientation on some browser -->
   <meta name="screen-orientation" content="portrait"/>
   <meta name="x5-orientation" content="portrait">
 
+  <!--fix fireball/issues/3568 -->
+  <!--<meta name="browsermode" content="application">-->
   <meta name="x5-page-mode" content="app">
+
+  <!--<link rel="apple-touch-icon" href=".png" />-->
+  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
 
   <link rel="stylesheet" type="text/css" href="style-mobile.css"/>
   <link rel="icon" href="favicon.ico"/>
@@ -44,97 +50,41 @@
 
 <script src="src/settings.js" charset="utf-8"></script>
 <script src="vconsole.min.js"></script>
+<script src="main.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+(function () {
+    // open web debugger console
+    if (typeof VConsole !== 'undefined') {
+        window.vConsole = new VConsole();
+    }
+
+    var debug = window._CCSettings.debug;
+    var splash = document.getElementById('splash');
+    splash.style.display = 'block';
+
+    function loadScript (moduleName, cb) {
+      function scriptLoaded () {
+          document.body.removeChild(domScript);
+          domScript.removeEventListener('load', scriptLoaded, false);
+          cb && cb();
+      };
+      var domScript = document.createElement('script');
+      domScript.async = true;
+      domScript.src = moduleName;
+      domScript.addEventListener('load', scriptLoaded, false);
+      document.body.appendChild(domScript);
+    }
+
+    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.js', function () {
+      if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
+        loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
+      }
+      else {
+        window.boot();
+      }
+    });
+})();
+</script>
 </body>
-</html>
-
-
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-        <title>Game</title>
-        <!--http://www.html5rocks.com/en/mobile/mobifying/-->
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, minimal-ui, viewport-fit=cover"/>
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-        <meta name="full-screen" content="true"/>
-        <meta name="screen-orientation" content="portrait"/>
-        <meta name="x5-fullscreen" content="true"/>
-        <meta name="360-fullscreen" content="true"/>
-        <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
-        <meta name="format-detection" content="telephone=no"/>
-        <!-- force webkit on 360 -->
-        <meta name="renderer" content="webkit"/>
-        <meta name="force-rendering" content="webkit"/>
-        <!-- force edge on IE -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <meta name="msapplication-tap-highlight" content="no"/>
-        <!-- force full screen on some browser -->
-        <meta name="full-screen" content="yes"/>
-        <meta name="x5-fullscreen" content="true"/>
-        <meta name="360-fullscreen" content="true"/>
-        <!--fix fireball/issues/3568 -->
-        <!--<meta name="browsermode" content="application">-->
-        <meta name="x5-page-mode" content="app"/>
-        <!--<link rel="apple-touch-icon" href=".png" />-->
-        <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
-        <link rel="stylesheet" type="text/css" href="style.02f4a.css"/>
-    </head>
-    <body>
-        <div id="GameDiv" cc_exact_fit_screen="true">
-            <div id="Cocos3dGameContainer">
-                <canvas id="GameCanvas" oncontextmenu="if (!window.__cfRLUnblockHandlers) return false; event.preventDefault()" tabindex="99" data-cf-modified-1875017356a9b55cf7795cda-=""></canvas>
-            </div>
-        </div>
-
-        <div id="screen-blocker" style="display: none">
-            <div id="screen-background" class="screen-background"></div>
-            <div id="screen-message" class="screen-container">
-                <div id="screen-image" class="screen-image"></div>
-                <p id="screen-message-eng" class="screen-message">Please rotate your device to play the game.</p>
-            </div>
-        </div>
-        <style>
-            .screen-background {
-                height: 100vh;
-                width: 100vw;
-                position: absolute;
-                top: 0;
-                display: block;
-                background-color: rgba(255, 0, 0, 1);
-            }
-
-            .screen-container {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                top: 25%;
-                left: 25%;
-                width: 50%;
-                height: 50%;
-            }
-
-            .screen-image {
-                content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAABKCAQAAADKk9RmAAAFHElEQVR42u3cA5TrWhgF4LRzbdu2bdu2bQttn22Pn+1lPfsKvXab/Ps/7VybGSOzsvrWtIPMJHuPhS86aSAlRy0k147rKnoF0Z6X658sKhWsXCrLY2k97eTgugFTLtQoQByXy/FauELslrhaBYTDXYQmwhVqyckzpUyhyqKaUkINy2cgqEKb4Aq9vFupI2nCs/h18ZiYz90vlc1HINyGHXBlR319JE3EHApHBMVQDJ7CZNTbUzhfgFAn6E/xGfI0uLBVnpbwOqm+6dgcCEQZpwPyXkLfRThH0iti0pmy+RiEWvibwiWPVgu7iyT3ZFEeHAiEJumCpPcDbFXqSLZ8CqKsxmq4aJMyg2coM5PLG0IAeRfvcSQ/TZ1Um+FBQmxgEG0j6A3R1gLJ2HA86a9hTpDZFMVR0JlLsO1CeUODsJOc5AihTj0QquzpI+YqT4rwzCgco4z/IsywIMnjTHTxdguu6CImpINoo4adq8bj8Soi8K6G5AW5tqFBqI8UQqijFiRz5PZ4W0vCUZhsbJC+OQmi2tAKL2vmkQh6XqlkMhBt4gZThHaYRn1NDXK5HO+iqPRhGkfTCncRE4OoNvTnKM145LEzZc0LkpDz1fEyIjLMI6+dr29qENWOzRlB8JaviZlBEsKLNSDvUnPTgah2T2tMo0k0EZNpEjkyjVnX8IzEitmYfLmcSeaQqxXFZsRyFOvs14iIlI+/x91Uu2kWmTNlfes0FNqG4x1fH9VuqnXI9apiMyL0Ofh1bzc1zHQrVZTEVt255F1vP5NuZby1sJWiM88d1HdPYdNudq9UIAdHpoNQpL+fajP1OESu7dtJySThCJdHqYVNPjCTbBdr43FEJIIoQzULi0lBEhJXE49RFI9VC0mSBZIUX2Maca6YJFkgQcYCsUBUO+qhSx62lbuIYUDOFeOB4ge+xmreFQ9whNeeK2cAENWO1RzHqgF6G197KuQ5iNyUhO40u8n/5FTxF07hoS7K82pYnoKoNopmVa90WK74qHjO9FwxmoP7upPhCFrmKQhK4qo+CA4qJaQcizId+iA3aXnegtTHA30QHELJHASZoQ/Ct3lHnoKIRkYDwXYLJGgQC8QCsUAsEFxSXmB3OogFsp/b0NMWSBoI3+VjuGRAEDxkP1+AwndyFwT3QLhnPJA7HIWuSh25Cbbieq6C7PW1x6+GA6Ef/aWllPCuXAX5+XI5/sJwIGKuZofvQi6C/HKlPH9pOBBoju/iLwtkdcYTwsEWyJ+emikfKYVYPMo9EP7pcjn+zIjjkD08GFVEW/FhClEugYiD/o7YY0QQFffYy1dzfaT6kOP092X6WDt3GhCe7u+ELsHV34kmFDAQuNgZWgsYSOCyA9uV7RTwcmcTgfBO33BvY08jeaCyFRYIOb1tpZRwA2wzPYgyQ0qLWkhMMjkIO8UQzT/Qy/RzCI+R0uK0e4YF/NpxUhZDdfm+4UC4TaDtB23wVJBScrIMLQ8EkvXRrqc4y0YCoas8S+KqYlPA6b7OX0Mt4i7iqUCzA99QJZgrcfEiP9Q/+o8q58rlVHmmPgjvQT3JXeR/VpVObKG5Yg4FZnMm2AYRuTa7deeQW7yH/8uh/oszeKT7W1cnXW+uVMLm0G/KFOyV2jyQb7Ca98UDejqBI+0s9Im8nhzkzHrZQZsw7WIIF66jFb9Gf+E4n82b4jT20Y80UbVr7lV1taJoJNrK7bJaXxOuGuqN3fYURhWqKxrmTVH/Qg1RSkpJPPQE5QJVh6vEAAAAAElFTkSuQmCC);
-                color: #ffffff;
-                display: flex;
-                object-fit: contain;
-                justify-content: center;
-                align-items: center;
-                width: 50%;
-                height: 50%;
-            }
-
-            .screen-message {
-                font-size: 5vh;
-                color: #ffffff;
-                text-align: center;
-                margin-top: 1em;
-            }
-        </style>
-    </body>
 </html>
