@@ -1,0 +1,132 @@
+
+freegame.png
+size: 1976,1766
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+15
+  rotate: false
+  xy: 1554, 278
+  size: 327, 284
+  orig: 374, 326
+  offset: 26, 21
+  index: -1
+15s
+  rotate: true
+  xy: 1158, 530
+  size: 458, 80
+  orig: 458, 81
+  offset: 0, 0
+  index: -1
+Group 163
+  rotate: true
+  xy: 1340, 26
+  size: 536, 212
+  orig: 540, 221
+  offset: 4, 0
+  index: -1
+Group 172
+  rotate: true
+  xy: 525, 22
+  size: 492, 228
+  orig: 492, 229
+  offset: 0, 1
+  index: -1
+biglight
+  rotate: false
+  xy: 1158, 990
+  size: 796, 774
+  orig: 800, 788
+  offset: 1, 12
+  index: -1
+btn
+  rotate: false
+  xy: 755, 2
+  size: 211, 52
+  orig: 211, 52
+  offset: 0, 0
+  index: -1
+btn1
+  rotate: false
+  xy: 968, 2
+  size: 211, 52
+  orig: 211, 52
+  offset: 0, 0
+  index: -1
+caishen
+  rotate: true
+  xy: 755, 56
+  size: 458, 583
+  orig: 479, 661
+  offset: 10, 53
+  index: -1
+coin
+  rotate: false
+  xy: 1686, 6
+  size: 107, 117
+  orig: 137, 138
+  offset: 12, 6
+  index: -1
+coin1
+  rotate: true
+  xy: 1883, 487
+  size: 75, 81
+  orig: 112, 104
+  offset: 8, 12
+  index: -1
+coin2
+  rotate: true
+  xy: 1796, 126
+  size: 150, 132
+  orig: 226, 201
+  offset: 39, 38
+  index: -1
+coin3
+  rotate: true
+  xy: 1554, 101
+  size: 175, 130
+  orig: 220, 203
+  offset: 14, 21
+  index: -1
+coin4
+  rotate: false
+  xy: 1795, 6
+  size: 107, 117
+  orig: 137, 138
+  offset: 12, 6
+  index: -1
+coin5
+  rotate: true
+  xy: 1686, 125
+  size: 151, 108
+  orig: 292, 295
+  offset: 81, 85
+  index: -1
+dragon
+  rotate: true
+  xy: 1240, 564
+  size: 424, 734
+  orig: 573, 749
+  offset: 110, 10
+  index: -1
+free game bg
+  rotate: false
+  xy: 2, 516
+  size: 576, 1248
+  orig: 576, 1248
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 2, 2
+  size: 521, 512
+  orig: 631, 606
+  offset: 52, 52
+  index: -1
+total win bg
+  rotate: false
+  xy: 580, 516
+  size: 576, 1248
+  orig: 576, 1248
+  offset: 0, 0
+  index: -1

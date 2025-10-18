@@ -1,0 +1,76 @@
+
+climax.png
+size: 155,980
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dot
+  rotate: false
+  xy: 2, 970
+  size: 8, 8
+  orig: 10, 10
+  offset: 1, 1
+  index: -1
+light_dot
+  rotate: true
+  xy: 2, 837
+  size: 52, 92
+  orig: 63, 94
+  offset: 4, 0
+  index: -1
+long_light
+  rotate: false
+  xy: 87, 8
+  size: 62, 451
+  orig: 69, 458
+  offset: 4, 4
+  index: -1
+shine
+  rotate: false
+  xy: 96, 461
+  size: 57, 433
+  orig: 69, 437
+  offset: 12, 2
+  index: -1
+shine1
+  rotate: false
+  xy: 2, 292
+  size: 83, 284
+  orig: 104, 289
+  offset: 11, 5
+  index: -1
+shine2
+  rotate: false
+  xy: 2, 578
+  size: 80, 257
+  orig: 104, 263
+  offset: 16, 5
+  index: -1
+shine3
+  rotate: false
+  xy: 2, 2
+  size: 74, 288
+  orig: 98, 288
+  offset: 13, 0
+  index: -1
+top_light
+  rotate: true
+  xy: 95, 896
+  size: 82, 43
+  orig: 83, 44
+  offset: 1, 1
+  index: -1
+top_light1
+  rotate: false
+  xy: 12, 939
+  size: 81, 39
+  orig: 92, 49
+  offset: 5, 10
+  index: -1
+top_light2
+  rotate: false
+  xy: 2, 891
+  size: 86, 46
+  orig: 90, 49
+  offset: 4, 3
+  index: -1

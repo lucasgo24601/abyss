@@ -1,0 +1,118 @@
+
+bigwin.png
+size: 1868,1419
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG-coin
+  rotate: true
+  xy: 590, 46
+  size: 573, 572
+  orig: 653, 690
+  offset: 29, 105
+  index: -1
+BG-light
+  rotate: true
+  xy: 2, 12
+  size: 607, 586
+  orig: 631, 603
+  offset: 9, 10
+  index: -1
+BG-light-big
+  rotate: true
+  xy: 2, 621
+  size: 796, 774
+  orig: 883, 853
+  offset: 42, 45
+  index: -1
+Yuanbao
+  rotate: false
+  xy: 1529, 57
+  size: 175, 130
+  orig: 220, 203
+  offset: 14, 21
+  index: -1
+bell-left
+  rotate: false
+  xy: 1236, 516
+  size: 332, 456
+  orig: 544, 544
+  offset: 113, 35
+  index: -1
+bell-right
+  rotate: true
+  xy: 778, 621
+  size: 332, 456
+  orig: 545, 544
+  offset: 99, 35
+  index: -1
+big win
+  rotate: true
+  xy: 1341, 77
+  size: 437, 186
+  orig: 447, 193
+  offset: 5, 5
+  index: -1
+cloud
+  rotate: true
+  xy: 1618, 960
+  size: 457, 248
+  orig: 499, 499
+  offset: 20, 125
+  index: -1
+coin
+  rotate: true
+  xy: 1706, 53
+  size: 106, 117
+  orig: 142, 142
+  offset: 17, 10
+  index: -1
+god of wealth
+  rotate: false
+  xy: 1206, 974
+  size: 410, 443
+  orig: 422, 585
+  offset: 6, 129
+  index: -1
+mahjong-fa
+  rotate: false
+  xy: 1708, 161
+  size: 148, 176
+  orig: 168, 184
+  offset: 11, 4
+  index: -1
+mahjong-zhong
+  rotate: true
+  xy: 1529, 189
+  size: 148, 177
+  orig: 169, 184
+  offset: 9, 3
+  index: -1
+mega win
+  rotate: true
+  xy: 1164, 2
+  size: 512, 175
+  orig: 521, 182
+  offset: 4, 5
+  index: -1
+num
+  rotate: false
+  xy: 1529, 339
+  size: 319, 99
+  orig: 336, 103
+  offset: 9, 2
+  index: -1
+super mega win
+  rotate: true
+  xy: 1570, 440
+  size: 518, 265
+  orig: 524, 269
+  offset: 3, 2
+  index: -1
+super-god of wealth
+  rotate: false
+  xy: 778, 955
+  size: 426, 462
+  orig: 447, 634
+  offset: 14, 139
+  index: -1

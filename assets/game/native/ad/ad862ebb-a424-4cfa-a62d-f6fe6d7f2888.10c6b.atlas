@@ -1,0 +1,48 @@
+
+spin_btn.png
+size: 487,106
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+free-btn
+  rotate: false
+  xy: 214, 4
+  size: 100, 100
+  orig: 104, 104
+  offset: 2, 2
+  index: -1
+free-light
+  rotate: false
+  xy: 2, 4
+  size: 106, 100
+  orig: 106, 104
+  offset: 0, 2
+  index: -1
+maim-light
+  rotate: false
+  xy: 316, 8
+  size: 95, 96
+  orig: 104, 104
+  offset: 4, 4
+  index: -1
+main
+  rotate: true
+  xy: 413, 33
+  size: 71, 72
+  orig: 104, 104
+  offset: 16, 16
+  index: -1
+main-btn
+  rotate: false
+  xy: 110, 2
+  size: 102, 102
+  orig: 104, 104
+  offset: 1, 1
+  index: -1
+num
+  rotate: false
+  xy: 413, 2
+  size: 45, 29
+  orig: 104, 104
+  offset: 29, 37
+  index: -1

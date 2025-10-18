@@ -1,0 +1,503 @@
+
+symbol.png
+size: 1871,205
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG-light
+  rotate: false
+  xy: 429, 75
+  size: 125, 128
+  orig: 138, 141
+  offset: 6, 8
+  index: -1
+Group 130备份 10
+  rotate: false
+  xy: 1800, 161
+  size: 10, 10
+  orig: 16, 16
+  offset: 3, 3
+  index: -1
+Group 130备份 11
+  rotate: false
+  xy: 1812, 161
+  size: 10, 10
+  orig: 17, 16
+  offset: 3, 3
+  index: -1
+Group 130备份 13
+  rotate: false
+  xy: 1800, 149
+  size: 10, 10
+  orig: 16, 16
+  offset: 3, 3
+  index: -1
+Group 130备份 14
+  rotate: false
+  xy: 1812, 149
+  size: 10, 10
+  orig: 16, 16
+  offset: 3, 3
+  index: -1
+Group 130备份 15
+  rotate: false
+  xy: 1800, 137
+  size: 10, 10
+  orig: 16, 16
+  offset: 3, 3
+  index: -1
+Group 130备份 16
+  rotate: true
+  xy: 579, 58
+  size: 11, 10
+  orig: 17, 16
+  offset: 3, 3
+  index: -1
+Group 130备份 17
+  rotate: false
+  xy: 1812, 137
+  size: 10, 10
+  orig: 16, 16
+  offset: 3, 3
+  index: -1
+Group 130备份 18
+  rotate: false
+  xy: 1800, 125
+  size: 10, 10
+  orig: 16, 16
+  offset: 3, 3
+  index: -1
+Group 130备份 2
+  rotate: false
+  xy: 579, 71
+  size: 10, 11
+  orig: 16, 16
+  offset: 3, 3
+  index: -1
+Group 130备份 4
+  rotate: false
+  xy: 579, 71
+  size: 10, 11
+  orig: 16, 16
+  offset: 3, 3
+  index: -1
+Group 130备份 20
+  rotate: true
+  xy: 566, 47
+  size: 10, 11
+  orig: 16, 16
+  offset: 3, 2
+  index: -1
+Group 130备份 21
+  rotate: false
+  xy: 566, 71
+  size: 11, 11
+  orig: 17, 16
+  offset: 3, 2
+  index: -1
+Group 130备份 3
+  rotate: false
+  xy: 579, 46
+  size: 10, 10
+  orig: 16, 16
+  offset: 3, 3
+  index: -1
+Group 130备份 5
+  rotate: false
+  xy: 579, 46
+  size: 10, 10
+  orig: 16, 16
+  offset: 3, 3
+  index: -1
+Group 130备份 6
+  rotate: true
+  xy: 566, 59
+  size: 10, 11
+  orig: 16, 16
+  offset: 3, 3
+  index: -1
+Group 130备份 7
+  rotate: false
+  xy: 164, 30
+  size: 11, 11
+  orig: 17, 16
+  offset: 3, 3
+  index: -1
+Group 130备份 8
+  rotate: false
+  xy: 733, 85
+  size: 10, 10
+  orig: 16, 16
+  offset: 3, 3
+  index: -1
+Group 130备份 9
+  rotate: false
+  xy: 745, 85
+  size: 10, 10
+  orig: 16, 16
+  offset: 3, 3
+  index: -1
+H1_golden
+  rotate: true
+  xy: 848, 7
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+H1_symbol
+  rotate: true
+  xy: 952, 9
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+H2_golden
+  rotate: false
+  xy: 990, 101
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+H2_symbol
+  rotate: true
+  xy: 1056, 11
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+H3_golden
+  rotate: false
+  xy: 1080, 101
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+H3_symbol
+  rotate: true
+  xy: 1160, 11
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+L1_golden
+  rotate: false
+  xy: 1170, 101
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+L1_symbol
+  rotate: false
+  xy: 1260, 101
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+L2_golden
+  rotate: true
+  xy: 1264, 11
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+L2_symbol
+  rotate: false
+  xy: 1350, 101
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+L3_golden
+  rotate: true
+  xy: 1368, 11
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+L3_symbol
+  rotate: false
+  xy: 1440, 101
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+M1_golden
+  rotate: true
+  xy: 1472, 11
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+M1_symbol
+  rotate: false
+  xy: 1530, 101
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+M2_golden
+  rotate: true
+  xy: 1576, 11
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+M2_symbol
+  rotate: false
+  xy: 1620, 101
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+M3_golden
+  rotate: true
+  xy: 1680, 11
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+M3_symbol
+  rotate: false
+  xy: 1710, 101
+  size: 88, 102
+  orig: 90, 102
+  offset: 1, 0
+  index: -1
+Mask group
+  rotate: false
+  xy: 959, 100
+  size: 29, 103
+  orig: 32, 111
+  offset: 3, 4
+  index: -1
+Mask group11
+  rotate: false
+  xy: 591, 2
+  size: 81, 80
+  orig: 101, 90
+  offset: 10, 5
+  index: -1
+WD_symbol
+  rotate: true
+  xy: 733, 97
+  size: 106, 98
+  orig: 126, 112
+  offset: 9, 2
+  index: -1
+coin rain
+  rotate: true
+  xy: 337, 4
+  size: 60, 67
+  orig: 62, 74
+  offset: 0, 3
+  index: -1
+fu
+  rotate: false
+  xy: 757, 4
+  size: 89, 91
+  orig: 98, 100
+  offset: 5, 5
+  index: -1
+glitter-back
+  rotate: true
+  xy: 255, 4
+  size: 37, 35
+  orig: 41, 46
+  offset: 1, 6
+  index: -1
+gold group
+  rotate: false
+  xy: 929, 99
+  size: 28, 104
+  orig: 32, 112
+  offset: 4, 4
+  index: -1
+golden thickness
+  rotate: false
+  xy: 704, 91
+  size: 27, 112
+  orig: 27, 112
+  offset: 0, 0
+  index: -1
+image 55493
+  rotate: true
+  xy: 1784, 11
+  size: 88, 85
+  orig: 92, 102
+  offset: 3, 3
+  index: -1
+image 554932
+  rotate: true
+  xy: 134, 10
+  size: 16, 15
+  orig: 22, 22
+  offset: 3, 3
+  index: -1
+image 55494
+  rotate: true
+  xy: 2, 28
+  size: 175, 160
+  orig: 205, 166
+  offset: 13, 4
+  index: -1
+image 554942
+  rotate: false
+  xy: 314, 50
+  size: 11, 14
+  orig: 18, 16
+  offset: 4, 0
+  index: -1
+image 55495
+  rotate: false
+  xy: 2, 2
+  size: 23, 24
+  orig: 42, 29
+  offset: 13, 4
+  index: -1
+image 55496
+  rotate: true
+  xy: 556, 84
+  size: 119, 118
+  orig: 162, 150
+  offset: 21, 17
+  index: -1
+image 55500
+  rotate: true
+  xy: 106, 9
+  size: 17, 26
+  orig: 24, 29
+  offset: 4, 2
+  index: -1
+image 55502
+  rotate: true
+  xy: 164, 43
+  size: 160, 148
+  orig: 164, 149
+  offset: 0, 1
+  index: -1
+image 55503
+  rotate: false
+  xy: 406, 8
+  size: 54, 56
+  orig: 57, 68
+  offset: 1, 12
+  index: -1
+image 55504
+  rotate: true
+  xy: 1833, 174
+  size: 29, 31
+  orig: 56, 56
+  offset: 14, 15
+  index: -1
+image 55505
+  rotate: false
+  xy: 531, 4
+  size: 27, 33
+  orig: 39, 36
+  offset: 6, 2
+  index: -1
+image 55509
+  rotate: false
+  xy: 292, 5
+  size: 43, 36
+  orig: 54, 39
+  offset: 0, 1
+  index: -1
+image 55510
+  rotate: true
+  xy: 85, 5
+  size: 21, 19
+  orig: 23, 20
+  offset: 0, 1
+  index: -1
+image 55511
+  rotate: true
+  xy: 218, 3
+  size: 38, 35
+  orig: 49, 46
+  offset: 7, 7
+  index: -1
+image 55515
+  rotate: true
+  xy: 833, 97
+  size: 106, 94
+  orig: 109, 109
+  offset: 1, 9
+  index: -1
+image 55516
+  rotate: false
+  xy: 462, 4
+  size: 67, 69
+  orig: 96, 95
+  offset: 12, 18
+  index: -1
+image 55517
+  rotate: false
+  xy: 531, 39
+  size: 33, 34
+  orig: 48, 47
+  offset: 6, 9
+  index: -1
+left coin
+  rotate: true
+  xy: 560, 5
+  size: 32, 29
+  orig: 38, 36
+  offset: 1, 1
+  index: -1
+light
+  rotate: false
+  xy: 674, 7
+  size: 75, 75
+  orig: 80, 81
+  offset: 2, 3
+  index: -1
+mahjong light
+  rotate: false
+  xy: 314, 66
+  size: 113, 137
+  orig: 113, 137
+  offset: 0, 0
+  index: -1
+right coin
+  rotate: true
+  xy: 1800, 173
+  size: 30, 31
+  orig: 38, 36
+  offset: 4, 3
+  index: -1
+star-left
+  rotate: false
+  xy: 1833, 145
+  size: 27, 27
+  orig: 37, 39
+  offset: 3, 3
+  index: -1
+star-left up
+  rotate: false
+  xy: 151, 12
+  size: 25, 14
+  orig: 30, 24
+  offset: 2, 5
+  index: -1
+star-right
+  rotate: false
+  xy: 178, 3
+  size: 38, 38
+  orig: 39, 40
+  offset: 0, 0
+  index: -1
+thickness-2
+  rotate: false
+  xy: 676, 88
+  size: 26, 115
+  orig: 26, 115
+  offset: 0, 0
+  index: -1
+up coin
+  rotate: false
+  xy: 27, 3
+  size: 56, 23
+  orig: 82, 28
+  offset: 13, 5
+  index: -1

@@ -1,0 +1,34 @@
+
+retrigger.png
+size: 731,985
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+10
+  rotate: true
+  xy: 417, 61
+  size: 339, 260
+  orig: 383, 326
+  offset: 23, 44
+  index: -1
+BG-light
+  rotate: false
+  xy: 2, 2
+  size: 413, 398
+  orig: 429, 410
+  offset: 6, 7
+  index: -1
+biglight
+  rotate: false
+  xy: 2, 402
+  size: 597, 581
+  orig: 600, 591
+  offset: 1, 9
+  index: -1
+text_en
+  rotate: true
+  xy: 601, 499
+  size: 484, 128
+  orig: 511, 140
+  offset: 14, 7
+  index: -1

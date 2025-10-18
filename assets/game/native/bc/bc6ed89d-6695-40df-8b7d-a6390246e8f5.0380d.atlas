@@ -1,0 +1,216 @@
+
+visual.png
+size: 2025,738
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Comp 1_00016
+  rotate: false
+  xy: 533, 16
+  size: 600, 338
+  orig: 600, 338
+  offset: 0, 0
+  index: -1
+Comp 1_00018
+  rotate: false
+  xy: 1135, 16
+  size: 600, 338
+  orig: 600, 338
+  offset: 0, 0
+  index: -1
+Mask group-1
+  rotate: false
+  xy: 1931, 167
+  size: 86, 84
+  orig: 86, 84
+  offset: 0, 0
+  index: -1
+Mask group-2
+  rotate: false
+  xy: 1833, 85
+  size: 64, 63
+  orig: 64, 63
+  offset: 0, 0
+  index: -1
+Mask group-3
+  rotate: true
+  xy: 1918, 311
+  size: 116, 105
+  orig: 116, 105
+  offset: 0, 0
+  index: -1
+Mask group-4
+  rotate: false
+  xy: 1833, 150
+  size: 96, 98
+  orig: 96, 98
+  offset: 0, 0
+  index: -1
+Mask group-53
+  rotate: false
+  xy: 2, 72
+  size: 273, 102
+  orig: 273, 102
+  offset: 0, 0
+  index: -1
+d992d41d-7de2-4af3-a873-39ee194c041d 5
+  rotate: false
+  xy: 205, 12
+  size: 58, 58
+  orig: 58, 58
+  offset: 0, 0
+  index: -1
+dragon
+  rotate: false
+  xy: 2, 176
+  size: 529, 560
+  orig: 529, 560
+  offset: 0, 0
+  index: -1
+eyes-close
+  rotate: true
+  xy: 1737, 223
+  size: 168, 68
+  orig: 193, 109
+  offset: 12, 8
+  index: -1
+eyes-open
+  rotate: true
+  xy: 1812, 406
+  size: 183, 102
+  orig: 193, 109
+  offset: 7, 3
+  index: -1
+fg-bg
+  rotate: false
+  xy: 533, 356
+  size: 576, 380
+  orig: 576, 380
+  offset: 0, 0
+  index: -1
+image 55389
+  rotate: true
+  xy: 1689, 393
+  size: 196, 121
+  orig: 196, 121
+  offset: 0, 0
+  index: -1
+image 55463
+  rotate: false
+  xy: 1737, 13
+  size: 104, 56
+  orig: 104, 56
+  offset: 0, 0
+  index: -1
+image 55466
+  rotate: false
+  xy: 2, 12
+  size: 201, 58
+  orig: 201, 58
+  offset: 0, 0
+  index: -1
+image 55467
+  rotate: true
+  xy: 1737, 71
+  size: 150, 94
+  orig: 150, 94
+  offset: 0, 0
+  index: -1
+image 55468
+  rotate: false
+  xy: 1918, 253
+  size: 104, 56
+  orig: 104, 56
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 1872, 599
+  size: 143, 137
+  orig: 143, 137
+  offset: 0, 0
+  index: -1
+light-small
+  rotate: false
+  xy: 1843, 2
+  size: 85, 81
+  orig: 85, 81
+  offset: 0, 0
+  index: -1
+mg-bg
+  rotate: false
+  xy: 1111, 356
+  size: 576, 380
+  orig: 576, 380
+  offset: 0, 0
+  index: -1
+上半身
+  rotate: true
+  xy: 1916, 429
+  size: 168, 101
+  orig: 173, 107
+  offset: 0, 6
+  index: -1
+下半身
+  rotate: false
+  xy: 277, 71
+  size: 210, 103
+  orig: 218, 108
+  offset: 8, 5
+  index: -1
+右帽捲
+  rotate: false
+  xy: 265, 18
+  size: 62, 51
+  orig: 62, 51
+  offset: 0, 0
+  index: -1
+右手
+  rotate: true
+  xy: 392, 30
+  size: 39, 60
+  orig: 41, 61
+  offset: 1, 1
+  index: -1
+左帽捲
+  rotate: false
+  xy: 1899, 95
+  size: 53, 53
+  orig: 53, 53
+  offset: 0, 0
+  index: -1
+左手
+  rotate: false
+  xy: 489, 132
+  size: 42, 42
+  orig: 43, 42
+  offset: 1, 0
+  index: -1
+左袖子
+  rotate: false
+  xy: 329, 23
+  size: 61, 46
+  orig: 79, 62
+  offset: 10, 7
+  index: -1
+帽子本體
+  rotate: true
+  xy: 1807, 250
+  size: 141, 109
+  orig: 141, 109
+  offset: 0, 0
+  index: -1
+臉
+  rotate: false
+  xy: 1689, 591
+  size: 181, 145
+  orig: 181, 145
+  offset: 0, 0
+  index: -1
+金元寶
+  rotate: true
+  xy: 489, 72
+  size: 58, 34
+  orig: 58, 34
+  offset: 0, 0
+  index: -1
