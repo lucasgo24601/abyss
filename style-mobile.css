@@ -35,7 +35,7 @@ body {
 
   cursor: default;
   color: #888;
-  background-color: #333;
+  background-color: #c7ed75;
 
   text-align: center;
   font-family: Helvetica, Verdana, Arial, sans-serif;
@@ -54,6 +54,7 @@ body {
   margin: 0;
   left: 0px;
   top: 0px;
+  background-color: blueviolet;
 
   display: -webkit-box;
   -webkit-box-orient: horizontal;
@@ -62,7 +63,7 @@ body {
 }
 
 canvas {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(42, 109, 186, 0);
 }
 
 a:link, a:visited {

@@ -5,7 +5,7 @@ body {
   margin: 0;
 
   text-align: center;
-  background-color: white;
+  background-color: rgb(191, 153, 153);
   font-family: Helvetica, Verdana, Arial, sans-serif;
 }
 
@@ -27,6 +27,7 @@ input::-webkit-inner-spin-button {
 }
 
 #Cocos2dGameContainer {
+  background-color: aquamarine;
   position: absolute;
   margin: 0;
   overflow: hidden;
@@ -35,7 +36,7 @@ input::-webkit-inner-spin-button {
 }
 
 canvas {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(26, 196, 222, 0);
 }
 
 a:link, a:visited {
