@@ -112,33 +112,10 @@ window.boot = function () {
             });
         }
     }
+    alert("done")
+    // cc.assetManager.loadScript(settings.jsList.map(function (x) { return 'src/' + x;}), cb);
 
-    cc.assetManager.loadScript(settings.jsList.map(function (x) { return 'src/' + x;}), cb);
-
-    for (var i = 0; i < bundleRoot.length; i++) {
-        cc.assetManager.loadBundle(bundleRoot[i], cb);
-    }
+    // for (var i = 0; i < bundleRoot.length; i++) {
+    //     cc.assetManager.loadBundle(bundleRoot[i], cb);
+    // }
 };
-
-if (window.jsb) {
-    var isRuntime = (typeof loadRuntime === 'function');
-    if (isRuntime) {
-        require('src/settings.js');
-        require('src/cocos2d-runtime.js');
-        if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
-            require('src/physics.js');
-        }
-        require('jsb-adapter/engine/index.js');
-    }
-    else {
-        require('src/settings.js');
-        require('src/cocos2d-jsb.js');
-        if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
-            require('src/physics.js');
-        }
-        require('jsb-adapter/jsb-engine.js');
-    }
-
-    cc.macro.CLEANUP_IMAGE_CACHE = true;
-    window.boot();
-}
